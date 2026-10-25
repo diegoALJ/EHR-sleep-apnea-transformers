@@ -95,6 +95,16 @@ This is a **methodology-aligned reconstruction**, not a bitwise or performance-v
 
 See [Methodology notes](docs/methodology_notes.md) for the detailed difference log.
 
+
 ## Research context
 
 The study used PyTorch, Hugging Face Transformers, MedSpaCy, and BertViz for exploratory attention visualization. Attention visualization is exploratory and **does not establish causal clinical importance**. Predictions from this repository are for research purposes only, **not clinical diagnosis**.
+
+## Authors
+
+| Organización   | Nombre del Miembro | Correo electronico | 
+|----------|-------------|-------------|
+| PUJ-Bogota |  Juan Pablo Pajaro Hernandez: Tutor Maestria |juanpajaro@javeriana.edu.co |
+| PUJ-Bogota |  Jehico Bladimir Bolivar : Team member  | bolivarb-jehico@javeriana.edu.co |
+| PUJ-Bogota |  Diego Montoya Tovar : Team member  | da.montoya@javeriana.edu.co |
+| PUJ-Bogota |  Yohann Montaño Reyes : Team member  | ymontano@javeriana.edu.co |

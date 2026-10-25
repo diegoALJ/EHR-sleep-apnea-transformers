@@ -1,0 +1,16 @@
+# Never commit source EHR, derived patient notes, outputs, or checkpoints
+data/
+outputs/
+*.csv
+*.parquet
+*.xlsx
+*.pkl
+*.pt
+*.pth
+*.safetensors
+.ipynb_checkpoints/
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.DS_Store

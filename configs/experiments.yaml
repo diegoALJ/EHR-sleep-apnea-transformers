@@ -1,0 +1,40 @@
+seed: 42
+input_csv: data/private/visits.csv
+output_dir: outputs
+columns:
+  patient_id: patient_id
+  visit_date: visit_date
+  text: note_text
+  diagnosis: apnea_label
+  entities: entities_text
+models:
+  beto: dccuchile/bert-base-spanish-wwm-uncased
+  xlm_roberta: xlm-roberta-base
+  biomedical_roberta: PlanTL-GOB-ES/roberta-base-biomedical-es
+representations: [full_ehr, entities]
+max_length: 512
+head: original_beto_pooler  # available for BETO; auto uses CLS hidden state for RoBERTa
+split:
+  test_size: 0.20
+  val_size: 0.20
+  random_state: 42
+balance:
+  target_positive_fraction: 0.30
+  apply_to: train_only  # documented methodological correction
+training:
+  epochs: 4 # reconstruction default; exact original epoch count not established
+  batch_size: 8
+  learning_rate: 0.000002
+  weight_decay: 0.0
+  warmup_ratio: 0.0
+  dropout: 0.30
+  max_grad_norm: 1.0
+tuning:
+  enabled: true
+  backbone: beto
+  search_space:
+    batch_size: [2, 4, 8]
+    dropout: [0.3]
+    learning_rate: [0.000001, 0.000002]
+  metric: roc_auc
+  # search on development train/validation only, never on test

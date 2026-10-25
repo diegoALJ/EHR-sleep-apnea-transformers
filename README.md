@@ -100,7 +100,7 @@ See [Methodology notes](docs/methodology_notes.md) for the detailed difference l
 
 The study used PyTorch, Hugging Face Transformers, MedSpaCy, and BertViz for exploratory attention visualization. Attention visualization is exploratory and **does not establish causal clinical importance**. Predictions from this repository are for research purposes only, **not clinical diagnosis**.
 
-## Authors
+## Authors and Publication
 
 | Organización   | Nombre del Miembro | Correo electronico | 
 |----------|-------------|-------------|
@@ -108,3 +108,13 @@ The study used PyTorch, Hugging Face Transformers, MedSpaCy, and BertViz for exp
 | PUJ-Bogota |  Jehico Bladimir Bolivar : Team member  | bolivarb-jehico@javeriana.edu.co |
 | PUJ-Bogota |  Diego Montoya Tovar : Team member  | da.montoya@javeriana.edu.co |
 | PUJ-Bogota |  Yohann Montaño Reyes : Team member  | ymontano@javeriana.edu.co |
+
+This repository is based on the research conducted as part of a Master's thesis in Artificial Intelligence at Pontificia Universidad Javeriana, Bogotá, Colombia.
+
+Title: Pronóstico de la apnea del sueño mediante el uso de técnicas de procesamiento de lenguaje natural aplicadas a registros médicos electrónicos.
+
+The original publication describes the methodology, experimental setup, and results obtained using pretrained Transformer models for sleep apnea prediction from electronic health records.
+
+Original publication: [Pontificia Universidad Javeriana Institutional Repository](https://repository.javeriana.edu.co/items/3bf9a713-ab12-4cc5-ad18-e2a62f60eb27)
+
+The research was conducted using anonymized clinical data provided by Hospital Universitario San Ignacio, Bogotá, Colombia. The original dataset is not publicly available due to patient confidentiality and data privacy restrictions.
